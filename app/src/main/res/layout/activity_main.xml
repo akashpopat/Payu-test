@@ -10,8 +10,179 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.akashpopat.payu_test.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="Key (given by payu)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                 />
+            <TextView
+                android:text="Amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:text="Txnid (you generate)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                 />
+            <TextView
+                android:text="Productinfo (max 100 char)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                 />
+            <TextView
+                android:text="Firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                 />
+            <TextView
+                android:text="Email "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                 />
+            <TextView
+                android:text="Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                 />
+            <TextView
+                android:text="surl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:text="furl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:text="unique user cred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/keyEditText"
+                android:hint="key"
+                android:text="gtKFFx" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/amountEditText"
+                android:hint="amount" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/txnidEditText"
+                android:hint="Txnid" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/productInfoEditText"
+                android:hint="Product Info" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/firstNameEditText"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/emailEditText"
+                android:hint="Email" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/phoneEditText"
+                android:hint="Phone" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/surlEditText"
+                android:hint="Success URL"
+                android:text="https://payu.herokuapp.com/success" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/furlEditText"
+                android:hint="Failure URL"
+                android:text="https://payu.herokuapp.com/failure" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/uniqueUserCredEditText"
+                android:hint="Unique User Cred" />
+
+            <Button
+                android:text="Test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="testRun" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>
